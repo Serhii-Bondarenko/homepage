@@ -63,7 +63,7 @@ body {
         margin-bottom: 20px;
     }
 
-    .experiences {
+    .experiences, .hobbies {
         margin-right: 0;
     }
 }
@@ -168,7 +168,7 @@ body {
     text-align: justify;
 }
 
-.experiences {
+.experiences, .hobbies {
     flex: 1 1 60%;
     margin-right: 50px;
 }
@@ -194,7 +194,7 @@ body {
     margin-bottom: 20px;
 }
 
-.experiences__company-project {
+.experiences__company-project, .hobbies__container, .personal__block {
     margin-left: 15px;
     margin-bottom: 25px;
 }
@@ -206,18 +206,18 @@ body {
     font-size: 15px;
 }
 
-.experiences__company-project-name {
+.experiences__company-project-name, .hobbies__container-title, .personal__block-title {
     color: var(--primary-text-color);
     text-align: left;
     margin-bottom: 10px;
 }
 
-.experiences__company-project-responsibilities {
+.experiences__company-project-responsibilities, .hobbies__container-list, .personal__block-list {
     color: var(--secondary-text-color);
     padding-left: 20px;
 }
 
-.additional-info {
+.additional-info, .personal {
     flex: 1 1 40%;
 }
 
@@ -260,4 +260,14 @@ body {
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+}
+
+#bulka {
+    display: none;
+    position: absolute;
+    bottom: 0;
+}
+
+#smile:hover~#bulka{
+    display: block;
 }
